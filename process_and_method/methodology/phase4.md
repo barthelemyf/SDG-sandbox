@@ -15,9 +15,12 @@
 ## Step 13. Review draft data model
 ![#0175DB](https://via.placeholder.com/15/0175DB?text=+) **Key activities**
 <pre>
-The <b>Working Group members</b> directly review the proposed model and/or contact domain experts for reviewing it.
+The <b>Working Group members</b> directly review the proposed model and/or contact domain experts for reviewing it. The reviewers are encouraged to propose a solution to their own issue. 
+ 
+The <b>editors</b> consolidate the proposed solutions and explain the pros and cons of the different solutions to the Working Group. If needed, the editors seek for additional contribution from the reviewers in collaboration with the moderator and rapporteur.
 
-The <b>editors</b> process the comments received and propose solutions.
+The <b>editors</b> classify the issues and tag major issues which should be commented in priority by the reviewers.
+
 </pre>
 
 ![#01BDDB](https://via.placeholder.com/15/01BDDB?text=+) **Description**
@@ -34,16 +37,21 @@ The Working Group must resolve each comment in one of three ways:
 *	Rejected: No changes will be made to the draft.
 *	Partially accepted: Some of the comment is accepted but other parts are rejected.
 
-After consideration of the comment, the editor records the resolution and sends a response to
-the reviewer. To a semantic issue, the response usually includes a summary of the context of the issue, the resolution agreed by the Working Group and the justification for the resolution, particularly in case the issue is rejected.
+After consideration of the comment, the editor records the resolution and sends a response to the reviewer. To a semantic issue, the response usually includes a summary of the context of the issue, the resolution agreed by the Working Group and the justification for the resolution, particularly in case the issue is rejected.
 
 The issues can be categorised in different ways. For example:
-*	**Editorial issues**
-  Bug-fixes such as spaces, typos or small errors within the data models can directly be corrected by the editorial team who presents a summary of all editorial issues in the     next meeting following the correction.
+*	**Enhancement**
+  New feature or request regarding the proposed models. It includes issues concerning the existing elements proposed within the models such as cardinality, the definition of an   element etc.
   
-*	**Semantic issues**
-  Issues concerning for instance the definitions used, the data type, the name of the entity or the namespace referred. The editors propose a resolution to the issue through the   collaborative tool, asking for further information to the Working Group when necessary. The proposed resolutions are discussed with the Working Group in the next meeting         following the issue creation  or directly via the collaborative tool.
+*	**New attribute**
+  Additional attribute which could or should be included within a model.
 
+* **Major issue**
+  Complex issues which require specific attention from the Working Group and the reviewers for commenting the issue and the potential resultions.
+  
+* **Type of evidence**
+  The different types of evidence analysed as part WP4.
+  
 Semantic issues include the proposition of enhancements to the data model published or the proposition of additional attributes or entities that are not present in the model. For further details about these two types of contribution, please check the dedicated steps.
 
 ![#E80505B](https://via.placeholder.com/15/E80505?text=+) **Rules and guidelines**
@@ -94,9 +102,29 @@ Key aspects to consider:
 
 ![#F4DE3B](https://via.placeholder.com/15/F4DE3B?text=+) **Example**
 
-```
-TBD
-```
+The following example describes the review of a draft data model followed by the creation of an issue and its processing by the editors and Working Group members.
+
+The process is the following:
+1. The editors publish on GitHub under the correct folder the diagram and tables describing the [Vehicle registration certificate](https://github.com/SEMICeu/SDG-sandbox/tree/master/evidences/vehicle_registration_certificate/data_model).
+1. While reviewing the model, a semantic expert or a domain expert will try to answer the following questions:
+   1. Are all elements necessary for this evidence described in the model?
+   1. Are there conflicts between the elements of the model and the elements used in your country?
+   1. Do you agree with the definition of the elements?
+   1. Is the element mandatory or optional in your country (cardinality)?
+   1. Do you have specific codes or expected type (e.g. format of date, address etc.) for attributes?
+1. The reviewers document their issues on GitHUB. For example, concerning the vehicle registration certificate, the [following issue](https://github.com/SEMICeu/SDG-sandbox/issues/45) was created:
+![Example step 13_Create an issue](https://github.com/SEMICeu/SDG-sandbox/blob/master/process_and_method/resources/Example%20step%2013-issue%20creation%202020-07-29%20005920.png)
+You may notice that the issue describes in practice several comments related to the vehicle registration certificate as well as an image of the data model used within the country. 
+To simplify the contribution of other reviewers to this issue, the editors will analyse the proposition, categorise it with labels, verify whether the issue should be restructured and describe the pros and cons of the issue documented. In our example, each bullet point from the general comments should represent a separate issue. 
+However, the editors should avoid as much as possible to complexify the structure of GitHub issues by creating complex hierarchies between the issues. For instance, the visual data model proposed by the issue owner does not need to be separated from the initial issue 45 since it represents a direct source of information which may be relevant for more than one issue. A good practice from here could be for other reviewers to share, as comments to this issue, their own data models.
+
+A simple guide if you would like to know how to [create an issue](https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue) on GitHub.
+   
+1. The editors or the moderator answer, usually within one working day, to the initial issue created by ackowledging the issue or directly giving an initial answer.
+1. The editors give more details about the pros and cons of the issue(s) raised to trigger the discussions and comments from other Working Group members. 
+1. The discussion continues as comments to the issue.
+1. When no agreement has been reached, the editors prepare the discussions and alternatives to be tackled during the next webinar following the public review period.
+
 
 ## Step 14. Proposition enhancements
 ![#0175DB](https://via.placeholder.com/15/0175DB?text=+) **Key activities**
